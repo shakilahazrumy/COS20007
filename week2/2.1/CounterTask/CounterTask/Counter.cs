@@ -9,17 +9,20 @@ namespace CounterTask
 {
     public class Counter
     {
+        // enables Counter object to know its count and name values
         private int _count;
         private string _name;
 
-        public Counter (string name)
+        public Counter(string name)
         {
             _name = name;
             _count = 0;
         }
+
         public void Increment()
         {
-            _count++;
+            _count++; 
+            // adds value of count by one
 
         }
 
@@ -29,13 +32,22 @@ namespace CounterTask
         }
         public string Name
         {
-            get { return _name; }   
-            set { _name = value; }
+            get
+            {
+                return _name;
+            }
+            set
+            {
+                _name = value;
+            }
         }
 
         public int Ticks
         {
             get { return _count; }
+        }
+        public ResetByDefault{
+
         }
 
     }
